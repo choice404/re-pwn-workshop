@@ -1,0 +1,12 @@
+{
+  "name": "RE + Pwn Workshop",
+  "image": "ghcr.io/choice404/re-pwn:latest",
+  "remoteUser": "student",
+  "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+  "hostRequirements": { "cpus": 2 },
+  "customizations": {
+    "vscode": {
+      "settings": { "terminal.integrated.cwd": "/challenges" }
+    }
+  }
+}
